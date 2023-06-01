@@ -49,6 +49,10 @@ public class Vehicle {
     }
 
     public Vehicle() {
+        this.owner = "None";
+        this.type = "None";
+        this.value = 0;
+        this.capacity = 0;
     }
 
     public Vehicle(String owner, String type, int value, int capacity) {
