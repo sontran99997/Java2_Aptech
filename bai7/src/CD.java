@@ -2,7 +2,7 @@ public class CD {
     private int maCD;
     private String tuaCD;
     private int soBaiHat;
-    private float giaThanh;
+    private double giaThanh;
 
     public void setMaCD(int maCD) {
         if(maCD>0)
@@ -25,7 +25,7 @@ public class CD {
             this.soBaiHat = 0;
     }
 
-    public void setGiaThanh(float giaThanh) {
+    public void setGiaThanh(double giaThanh) {
         if (giaThanh > 0)
             this.giaThanh = giaThanh;
         else
@@ -44,7 +44,7 @@ public class CD {
         return soBaiHat;
     }
 
-    public float getGiaThanh() {
+    public double getGiaThanh() {
         return giaThanh;
     }
 
@@ -55,7 +55,7 @@ public class CD {
         this.giaThanh = 0;
     }
 
-    public CD(int maCD, String tuaCD, int soBaiHat, float giaThanh) {
+    public CD(int maCD, String tuaCD, int soBaiHat, double giaThanh) {
         this.maCD = maCD;
         this.tuaCD = tuaCD;
         this.soBaiHat = soBaiHat;

@@ -11,14 +11,18 @@ public class Main {
         System.out.println(ht1.toString());
 
         //bai8
-        /*CD cd1 = new CD(12345,"nhac tre",10,102000);
-        CD cd2 = new CD(12346,"nhac tru trinh",20,202000);
-//        CD[] list = {};
-        CDList cdl = new CDList(2);
-       *//* cdl.setN(2);
-        cdl.setCdList(list);*//*
-        cdl.addCD(cd2);
-        System.out.println(cdl.getCdList()[0].getMaCD());*/
+        CD cd1 = new CD(12345,"nhac tre",10,102000);
+        CD cd2 = new CD(12346,"nhac tru tinh",20,202000);
+        CD cd3 = new CD(12347,"nhac vpop",23,305000);
+        CDList cdList = new CDList();
+        cdList.khoitao(4);
+        cdList.themCD(cd1);
+        cdList.themCD(cd2);
+        cdList.themCD(cd3);
+        cdList.sapXepGiamDanTheoGiaThanh();
+        cdList.thongTinToanBoCD();
+        cdList.saoXepTangDanTheoTuaCD();
+        cdList.thongTinToanBoCD();
 
     }
 }
