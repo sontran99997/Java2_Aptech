@@ -39,8 +39,8 @@ public class HangThucPham extends HangHoa{
     }
 
     public void setNgayHetHan(LocalDate ngayHetHan) {
-        if (ngayHetHan.isBefore(LocalDate.now()))
-            this.ngayHetHan = LocalDate.now();
+        if (ngayHetHan.isBefore(getNgaySanXuat()))
+            this.ngayHetHan = getNgaySanXuat();
         else
             this.ngayHetHan = ngayHetHan;
     }
@@ -56,5 +56,10 @@ public class HangThucPham extends HangHoa{
                 ", ngaySanXuat= " + ngaySanXuat +
                 ", ngayHetHan= " + ngayHetHan +
                 '}';
+    }
+
+    @Override
+    byte VAT() {
+        return 1/20;
     }
 }

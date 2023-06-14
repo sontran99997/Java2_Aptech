@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class HangHoa {
+public abstract class HangHoa {
     private int maHang = new Random().nextInt(100)+1;
     private String tenHang;
     private double donGia;
@@ -63,5 +63,6 @@ public class HangHoa {
                 ", soLuongTon=" + soLuongTon +
                 '}';
     }
+    abstract byte VAT();
 
 }
