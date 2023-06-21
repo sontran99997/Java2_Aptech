@@ -11,7 +11,7 @@ public class CRUD {
     public static ResultSet read(String sql){
         ResultSet rs;
         try {
-            Statement statement = conn.createStatement();
+            Statement statement = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONCUR_READ_ONLY,ResultSet.HOLD_CURSORS_OVER_COMMIT);
             rs = statement.executeQuery(sql);
 
         } catch (SQLException e) {
